@@ -1,0 +1,99 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 24px;
+    color: red;
+}
+
+/* Search Input */
+#searchbar {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background: #333;
+    color: white;
+    font-size: 16px;
+}
+
+/* Search Button */
+#search-btn {
+    padding: 10px 15px;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#search-btn:hover {
+    background: darkred;
+}
+
+/* Movie Container */
+#movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Movie Card */
+.movie {
+    width: 200px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+/* Movie Title */
+.movie h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Movie Rating */
+.movie span {
+    background: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
